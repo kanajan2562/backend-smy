@@ -1,8 +1,8 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import userRouter from './routers/userRouter.js';
+import userRouter from './backend/routers/userRouter.js';
 import cors from 'cors';
-import categoryRouter from './routers/categoryRouter.js';
+import categoryRouter from './backend/routers/categoryRouter.js';
 
 dotenv.config();
 const app = express();
@@ -36,6 +36,7 @@ app.use((err, req, res, next) => {
 //     res.header("Access-Control-Allow-Headers","access-control-allow-headers", "Origin, X-Requested-With, Content-Type, Accept, _token");
 //     next();
 // });
+
 
 const PORT = process.env.PORT || 5300 ;
 app.listen(PORT, () => {
