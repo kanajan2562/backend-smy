@@ -7,27 +7,35 @@ import categoryRouter from './backend/routers/categoryRouter.js';
 dotenv.config();
 const app = express();
 app.use(express.json());
-app.use(express.urlencoded({extended:true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 /////Router API /////
 
-app.use('/api/users',userRouter);
-app.use('/api/category',categoryRouter);
-
-
-
+app.use('/api/users', userRouter);
+app.use('/api/category', categoryRouter);
 
 ////CONFIG SERVER ////
 app.get('/', (req, res) => {
     res.send("Server is ready...");
 });
-
-
 app.use((err, req, res, next) => {
     next();
     res.status(500).send({ message: err.message });
 });
+const PORT = process.env.PORT || 5300;
+app.listen(PORT, () => {
+    console.log(`Serve at http://localhost:${PORT}`);
+});
 
+
+
+
+
+
+
+
+
+////END////////////////
 // app.use(function(req, res, next) {
 //     res.header("Access-Control-Allow-Credentials", "true");
 //     res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
@@ -37,21 +45,6 @@ app.use((err, req, res, next) => {
 //     next();
 // });
 
-
-const PORT = process.env.PORT || 5300 ;
-app.listen(PORT, () => {
-    console.log(`Serve at http://localhost:${PORT}`);
-});
-
-
- 
-
-
-
-
-
-
-////END////////////////
 
     // res.header("Access-Control-Allow-Origin", "*");
     // res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
