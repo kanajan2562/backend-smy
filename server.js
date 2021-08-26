@@ -34,6 +34,8 @@ app.listen(PORT, () => {
 
 
 
+///Command package.json
+// "start": "nodemon --watch MYAPP --exec node --experimental-modules ./server.js"
 
 ////END////////////////
 // app.use(function(req, res, next) {
