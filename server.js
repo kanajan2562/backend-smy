@@ -53,3 +53,14 @@ app.listen(PORT, () => {
     // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
     // next();
 
+//
+// NODE_ENV = development
+
+
+// DB_HOST= localhost
+// DB_USER= root
+// DB_NAME= flutterdb
+// DB_PASSWORD=''
+// CONNECTION_LIMIT:10
+
+// JWT_SECRET = somethingsecret;
