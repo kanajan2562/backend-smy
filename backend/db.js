@@ -18,7 +18,6 @@ const pool =  mysql.createPool({
   database: "id15994078_mydbhappy",
   password: "2I-BU8>~-QGuExSt",  //pass phpmyadmin
   connectionLimit: 10,
-  port:3306
 });
 
 pool.on('connection', function (connection) {
