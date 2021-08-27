@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
-  },"keywords": [
+  },
+  "keywords": [
     "heroku"
   ],
   "author": "",
@@ -33,4 +34,3 @@
     "npm": "6.14.11"
   }
 }
-

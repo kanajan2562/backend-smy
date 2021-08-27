@@ -35,8 +35,12 @@ app.listen(PORT, () => {
 
 
 ///Command package.json
+//"start": "nodemon --watch backend --exec node --experimental-modules ./server.js"
 // "start": "nodemon --watch MYAPP --exec node --experimental-modules ./server.js"
 
+///For Server Heroku
+//  "test": "echo \"Error: no test specified\" && exit 1", 
+// "start": "node server.js"
 ////END////////////////
 // app.use(function(req, res, next) {
 //     res.header("Access-Control-Allow-Credentials", "true");

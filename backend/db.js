@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 
 
 dotenv.config();
+//host: "https://smyproject.000webhostapp.com",
 // const pool =  mysql.createPool({
 //   host: process.env.DB_HOST,
 //   user: process.env.DB_USER,
@@ -11,14 +12,15 @@ dotenv.config();
 //   connectionLimit: process.env.CONNECTION_LIMIT,
 // });
 const pool =  mysql.createPool({
-  //host: "https://smyproject.000webhostapp.com",
-
-  host: "https://smyproject.000webhostapp.com",
-  user: "id15994078_userhappy", //user phpmyadmin
-  database: "id15994078_mydbhappy",
-  password: "2I-BU8>~-QGuExSt",  //pass phpmyadmin
-  connectionLimit: 10,
+  host: "us-cdbr-east-04.cleardb.com",
+  user: "b05c614792b0fe", //user phpmyadmin
+  password: "9fa71307",  //pass phpmyadmin
+  database: "heroku_f190558e05b346f",
+  connectionLimit: 5,
+  
 });
+
+//mysql://b05c614792b0fe:9fa71307@us-cdbr-east-04.cleardb.com/heroku_f190558e05b346f?reconnect=true
 
 pool.on('connection', function (connection) {
     console.log('DB Connection established');
@@ -32,6 +34,7 @@ pool.on('connection', function (connection) {
 
 let db = {}; //create object after use.
 export default pool;
+
 
 
   // connectionLimit: 10,

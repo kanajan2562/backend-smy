@@ -7,6 +7,9 @@ import jwt from "jsonwebtoken";
 
 
 const userRouter = express.Router();
+userRouter.get('/test',(req,res)=>{
+    res.send({message:"test  sssdfsd ok"});
+});
 
 userRouter.get('/all',
     expressAsyncHandler(async (req, res) => {
