@@ -3,14 +3,20 @@ import dotenv from 'dotenv';
 
 
 dotenv.config();
+// const pool =  mysql.createPool({
+//   host: process.env.DB_HOST,
+//   user: process.env.DB_USER,
+//   database: process.env.DB_NAME,
+//   password: process.env.DB_PASSWORD,
+//   connectionLimit: process.env.CONNECTION_LIMIT,
+// });
 const pool =  mysql.createPool({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  database: process.env.DB_NAME,
-  password: process.env.DB_PASSWORD,
-  connectionLimit: process.env.CONNECTION_LIMIT,
+  host: "https://smyproject.000webhostapp.com",
+  user: "id15994078_userhappy",
+  database: "id15994078_mydbhappy",
+  password: "mErZfWD4_E/L/k6",
+  connectionLimit: 10,
 });
-
 
 pool.on('connection', function (connection) {
     console.log('DB Connection established');
