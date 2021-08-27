@@ -12,7 +12,8 @@ dotenv.config();
 // });
 const pool =  mysql.createPool({
   //host: "https://smyproject.000webhostapp.com",
-  host: "https://smyproject.000webhostapp.com",
+  
+  host: "smyproject.000webhostapp.com",
   user: "id15994078_userhappy", //user phpmyadmin
   database: "id15994078_mydbhappy",
   password: "2I-BU8>~-QGuExSt",  //pass phpmyadmin
