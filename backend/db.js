@@ -14,7 +14,7 @@ const pool =  mysql.createPool({
   host: "https://smyproject.000webhostapp.com",
   user: "id15994078_userhappy",
   database: "id15994078_mydbhappy",
-  password: "mErZfWD4_E/L/k6",
+  password: "2I-BU8>~-QGuExSt",
   connectionLimit: 10,
 });
 
