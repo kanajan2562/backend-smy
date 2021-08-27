@@ -2,6 +2,7 @@
   "name": "myapp",
   "type": "module",
   "proxy": "https://smyproject.000webhostapp.com",
+  
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -34,3 +35,4 @@
     "npm": "6.14.11"
   }
 }
+
