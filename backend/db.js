@@ -12,10 +12,10 @@ dotenv.config();
 // });
 const pool =  mysql.createPool({
   //host: "https://smyproject.000webhostapp.com",
-  host: "https://databases-auth.000webhost.com",
-  user: "id15994078_userhappy",
+  host: "https://www.000webhost.com/members/website/smyproject/database",
+  user: "id15994078_userhappy", //user phpmyadmin
   database: "id15994078_mydbhappy",
-  password: "2I-BU8>~-QGuExSt",
+  password: "2I-BU8>~-QGuExSt",  //pass phpmyadmin
   connectionLimit: 10,
 });
 
