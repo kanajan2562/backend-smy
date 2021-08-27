@@ -11,7 +11,8 @@ dotenv.config();
 //   connectionLimit: process.env.CONNECTION_LIMIT,
 // });
 const pool =  mysql.createPool({
-  host: "https://smyproject.000webhostapp.com",
+  //host: "https://smyproject.000webhostapp.com",
+  host: "https://databases-auth.000webhost.com",
   user: "id15994078_userhappy",
   database: "id15994078_mydbhappy",
   password: "2I-BU8>~-QGuExSt",
